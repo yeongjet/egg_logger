@@ -12,7 +12,9 @@ export default class Test extends Service {
   public async sayHi(name: string) {
     const { ctx } = this;
     // ctx.log.info('hi', 'a', 'b');
-    ctx.logger.info('hi', 'a', 'b');
+    ctx.log.warn('hello')
+    ctx.log.info({name: 'ge'});
+    ctx.log.verbose('ok')
     return `hi, ${name}`;
   }
 }

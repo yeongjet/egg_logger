@@ -22,9 +22,12 @@
     "clean": "ets clean"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "egg": "^2.6.1",
     "egg-scripts": "^2.6.0",
-    "egg-tracer": "^1.1.0"
+    "egg-tracer": "^1.1.0",
+    "pad": "^3.2.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",

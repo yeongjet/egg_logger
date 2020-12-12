@@ -1,12 +1,19 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
+// import { Tracer } from '../logger/tracer';
 
 export default (appInfo: EggAppInfo) => {
   const config = {} as PowerPartial<EggAppConfig>;
   config.logger = {
-    outputJSON: true,
+    appLogName: `${appInfo.name}.log`,
   };
   // override config from framework / plugin
   // use for cookie sign key, should change to your own and keep security
+  // config.tracer = {
+  //   Class: Tracer
+  // };
+  // config.tracer = {
+  //   Class: require('../logger/tracer.js')
+  // };
   config.keys = appInfo.name + '_1607654939304_4357';
 
   // add your egg config in here

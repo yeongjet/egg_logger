@@ -16,7 +16,7 @@ export class FileTransport extends FileTransportOrigin {
     const time = moment().format('YYYY-MM-DD HH:mm:ss.SSS');
     const pid = process.pid;
     const url = this.ctx.request.url;
-    const prefix = `[${time}][${level}][${pid}][${url}]****`;
+    const prefix = `[${time}][${level}][${pid}][${url}]`;
     // console.log('console.args');
     // console.log(args);
     if (args.length > 0) {

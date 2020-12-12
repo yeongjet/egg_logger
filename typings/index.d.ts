@@ -1,5 +1,5 @@
-import { Logger } from 'egg-logger';
-import CustomLogger from '../logger/logger';
+// import { Logger } from 'egg-logger';
+import { Logger } from 'winston';
 
 declare module 'egg' {
   interface Context {
